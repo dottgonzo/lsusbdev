@@ -1,8 +1,16 @@
 import * as child_process from "child_process";
 import * as Promise from "bluebird";
 
+interface Answer {
+    dev: string;
+    type: string;
+    hub: string;
+    product: string;
+    id: string;
+}
+
 export = function(e?: any) {
-    return new Promise(function(resolve, reject) {
+    return new Promise<Answer[]>(function(resolve, reject) {
         let callbacked = false;
         let timo = setTimeout(function() {
             if (!callbacked) {

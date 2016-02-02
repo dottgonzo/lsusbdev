@@ -1,4 +1,4 @@
-let Usb = require('../index.js');
+import Usb = require("../index");
 import * as chai from "chai";
 let expect = chai.expect;
 
@@ -11,6 +11,7 @@ describe("netw object", function() {
             console.log(data);
             expect(data).to.be.ok;
             expect(data).to.be.an("array");
+                        expect(data[0].dev).to.be.a("string");
             done();
         }).catch(function(err) {
             throw err;
