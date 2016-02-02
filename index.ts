@@ -16,19 +16,19 @@ export = function(e?: any) {
             if (!callbacked) {
                 reject("timeout error");
             }
-        }, 50000)
+        }, 50000);
 
-        child_process.exec(__dirname + '/list.sh', function(error, stdout, stderr) {
+        child_process.exec(__dirname + "/list.sh", function(error, stdout, stderr) {
             callbacked = true;
             clearTimeout(timo);
             if (error && error != null) {
-                reject(error)
+                reject(error);
             } else if (stderr) {
-                reject(stderr)
+                reject(stderr);
             } else {
                 resolve(JSON.parse(stdout + ""));
             }
-        })
+        });
 
-    })
+    });
 }
