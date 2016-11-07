@@ -9,7 +9,7 @@ interface Answer {
     id: string;
 }
 
-export default function (e?: any) {
+export default function lsusbdev(e?: any) {
     return new Promise<Answer[]>(function (resolve, reject) {
         let callbacked = false;
         let timo = setTimeout(function () {
