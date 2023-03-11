@@ -1,7 +1,10 @@
 "use strict";
-var index_1 = require("../index");
-index_1.default().then(function (data) {
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const index_1 = __importDefault(require("../index"));
+(0, index_1.default)().then(function (data) {
     console.log(data);
 });
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJpbi9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0Esc0JBQWdCLFVBQVUsQ0FBQyxDQUFBO0FBRTNCLGVBQUcsRUFBRSxDQUFDLElBQUksQ0FBQyxVQUFVLElBQUk7SUFDckIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUV0QixDQUFDLENBQUMsQ0FBQSIsImZpbGUiOiJiaW4vaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCBVc2IgZnJvbSBcIi4uL2luZGV4XCI7XG5cblVzYigpLnRoZW4oZnVuY3Rpb24gKGRhdGEpIHtcbiAgICBjb25zb2xlLmxvZyhkYXRhKTtcblxufSkiXX0=
+//# sourceMappingURL=index.js.map

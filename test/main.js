@@ -1,18 +1,45 @@
 "use strict";
-var index_1 = require("../index");
-var chai = require("chai");
-var expect = chai.expect;
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const index_1 = __importDefault(require("../index"));
+const chai = __importStar(require("chai"));
+let expect = chai.expect;
 describe("main test", function () {
     this.timeout(50000);
     it("should return an object", function (done) {
-        index_1.default().then(function (data) {
+        (0, index_1.default)().then(function (data) {
             expect(data).to.be.ok;
             expect(data).to.be.an("array");
+            //     expect(data[0].dev).to.be.a("string");
             done();
         }).catch(function (err) {
             done(err);
         });
     });
 });
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QvbWFpbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsc0JBQWdCLFVBQVUsQ0FBQyxDQUFBO0FBQzNCLElBQVksSUFBSSxXQUFNLE1BQU0sQ0FBQyxDQUFBO0FBQzdCLElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxNQUFNLENBQUM7QUFFekIsUUFBUSxDQUFDLFdBQVcsRUFBRTtJQUNsQixJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBRXBCLEVBQUUsQ0FBQyx5QkFBeUIsRUFBRSxVQUFVLElBQUk7UUFFeEMsZUFBRyxFQUFFLENBQUMsSUFBSSxDQUFDLFVBQVUsSUFBSTtZQUVyQixNQUFNLENBQUMsSUFBSSxDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUM7WUFDdEIsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBRS9CLElBQUksRUFBRSxDQUFDO1FBQ1gsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLFVBQVUsR0FBRztZQUNsQixJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDZCxDQUFDLENBQUMsQ0FBQztJQUVQLENBQUMsQ0FBQyxDQUFDO0FBRVAsQ0FBQyxDQUFDLENBQUMiLCJmaWxlIjoidGVzdC9tYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFVzYiBmcm9tIFwiLi4vaW5kZXhcIjtcbmltcG9ydCAqIGFzIGNoYWkgZnJvbSBcImNoYWlcIjtcbmxldCBleHBlY3QgPSBjaGFpLmV4cGVjdDtcblxuZGVzY3JpYmUoXCJtYWluIHRlc3RcIiwgZnVuY3Rpb24gKCkge1xuICAgIHRoaXMudGltZW91dCg1MDAwMCk7XG5cbiAgICBpdChcInNob3VsZCByZXR1cm4gYW4gb2JqZWN0XCIsIGZ1bmN0aW9uIChkb25lKSB7XG5cbiAgICAgICAgVXNiKCkudGhlbihmdW5jdGlvbiAoZGF0YSkge1xuXG4gICAgICAgICAgICBleHBlY3QoZGF0YSkudG8uYmUub2s7XG4gICAgICAgICAgICBleHBlY3QoZGF0YSkudG8uYmUuYW4oXCJhcnJheVwiKTtcbiAgICAgICAgICAgIC8vICAgICBleHBlY3QoZGF0YVswXS5kZXYpLnRvLmJlLmEoXCJzdHJpbmdcIik7XG4gICAgICAgICAgICBkb25lKCk7XG4gICAgICAgIH0pLmNhdGNoKGZ1bmN0aW9uIChlcnIpIHtcbiAgICAgICAgICAgIGRvbmUoZXJyKTtcbiAgICAgICAgfSk7XG5cbiAgICB9KTtcblxufSk7Il19
+//# sourceMappingURL=main.js.map
